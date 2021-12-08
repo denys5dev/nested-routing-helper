@@ -29,7 +29,7 @@ export const routes: Routes = [
         path: 'technical-objectives',
         loadChildren: () =>
           import(
-            'src/app/routes/technical-objectives/technical-objectives.module'
+            'src/app/routes/sla/submodules/technical-objectives/technical-objectives.module'
           ).then((m) => m.TechnicalObjectivesModule),
       },
     ],

@@ -16,9 +16,9 @@ export const routes: Routes = [
   {
     path: ':id/measures',
     loadChildren: () =>
-      import('src/app/routes/sg-measures/sg-measures.module').then(
-        (m) => m.SgMeasuresModule
-      ),
+      import(
+        'src/app/routes/sla/submodules/sg-measures/sg-measures.module'
+      ).then((m) => m.SgMeasuresModule),
   },
 ];
 @NgModule({
