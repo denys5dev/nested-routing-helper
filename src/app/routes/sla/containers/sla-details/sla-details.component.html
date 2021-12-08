@@ -1,0 +1,24 @@
+<div>
+  <h1>SLA Detail</h1>
+  <a
+    [routerLink]="['/state-level-approach', 1, 2, 'view']"
+    routerLinkActive="router-link-active"
+    >General</a
+  >
+  <br />
+  <a
+    [routerLink]="['/state-level-approach', 1, 2, 'technical-objectives']"
+    routerLinkActive="router-link-active"
+    >Technical Objectives</a
+  >
+  <br />
+  <a
+    [routerLink]="['/state-level-approach', 1, 2, 'comments']"
+    routerLinkActive="router-link-active"
+    >Comments</a
+  >
+</div>
+<br />
+<div class="main-layout">
+  <router-outlet></router-outlet>
+</div>
